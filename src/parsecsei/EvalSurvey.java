@@ -27,17 +27,206 @@ public class EvalSurvey extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnGroupQ1 = new javax.swing.ButtonGroup();
+        btnGroupQ2 = new javax.swing.ButtonGroup();
+        surveyPanel = new javax.swing.JPanel();
+        surveyTitle = new javax.swing.JLabel();
+        courseName = new javax.swing.JLabel();
+        instructorName = new javax.swing.JLabel();
+        courseLabel = new javax.swing.JLabel();
+        instructorLabel = new javax.swing.JLabel();
+        scrollPane = new javax.swing.JScrollPane();
+        questionPanel = new javax.swing.JPanel();
+        questionLabel1 = new javax.swing.JLabel();
+        opt1Radio1 = new javax.swing.JRadioButton();
+        opt2Radio1 = new javax.swing.JRadioButton();
+        opt3Radio1 = new javax.swing.JRadioButton();
+        opt4Radio1 = new javax.swing.JRadioButton();
+        opt5Radio1 = new javax.swing.JRadioButton();
+        questionLabel2 = new javax.swing.JLabel();
+        opt1Radio2 = new javax.swing.JRadioButton();
+        opt2Radio2 = new javax.swing.JRadioButton();
+        opt3Radio2 = new javax.swing.JRadioButton();
+        opt4Radio2 = new javax.swing.JRadioButton();
+        opt5Radio2 = new javax.swing.JRadioButton();
+        submitBtn = new javax.swing.JButton();
+        studentLabel = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("SEI Form");
+        setResizable(false);
+
+        surveyTitle.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        surveyTitle.setText("Course Evaluation Form");
+
+        courseName.setText("Course:");
+
+        instructorName.setText("Instructor:");
+
+        courseLabel.setText("XXX 000");
+
+        instructorLabel.setText("[Instructor]");
+
+        scrollPane.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        questionLabel1.setText("1) Did your professor...?");
+
+        btnGroupQ1.add(opt1Radio1);
+        opt1Radio1.setText("Strongly Disagree");
+
+        btnGroupQ1.add(opt2Radio1);
+        opt2Radio1.setText("Disagree");
+
+        btnGroupQ1.add(opt3Radio1);
+        opt3Radio1.setText("Neutral");
+
+        btnGroupQ1.add(opt4Radio1);
+        opt4Radio1.setText("Agree");
+
+        btnGroupQ1.add(opt5Radio1);
+        opt5Radio1.setText("Strongly Agree");
+
+        questionLabel2.setText("2) Did your professor...?");
+
+        btnGroupQ2.add(opt1Radio2);
+        opt1Radio2.setText("Strongly Disagree");
+
+        btnGroupQ2.add(opt2Radio2);
+        opt2Radio2.setText("Disagree");
+
+        btnGroupQ2.add(opt3Radio2);
+        opt3Radio2.setText("Neutral");
+
+        btnGroupQ2.add(opt4Radio2);
+        opt4Radio2.setText("Agree");
+
+        btnGroupQ2.add(opt5Radio2);
+        opt5Radio2.setText("Strongly Agree");
+
+        javax.swing.GroupLayout questionPanelLayout = new javax.swing.GroupLayout(questionPanel);
+        questionPanel.setLayout(questionPanelLayout);
+        questionPanelLayout.setHorizontalGroup(
+            questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(questionPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(questionLabel1)
+                    .addGroup(questionPanelLayout.createSequentialGroup()
+                        .addComponent(opt1Radio1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(opt2Radio1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(opt3Radio1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(opt4Radio1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(opt5Radio1))
+                    .addComponent(questionLabel2)
+                    .addGroup(questionPanelLayout.createSequentialGroup()
+                        .addComponent(opt1Radio2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(opt2Radio2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(opt3Radio2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(opt4Radio2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(opt5Radio2)))
+                .addContainerGap(22, Short.MAX_VALUE))
+        );
+        questionPanelLayout.setVerticalGroup(
+            questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(questionPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(questionLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio1)
+                    .addComponent(opt2Radio1)
+                    .addComponent(opt3Radio1)
+                    .addComponent(opt4Radio1)
+                    .addComponent(opt5Radio1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(questionLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio2)
+                    .addComponent(opt2Radio2)
+                    .addComponent(opt3Radio2)
+                    .addComponent(opt4Radio2)
+                    .addComponent(opt5Radio2))
+                .addContainerGap(459, Short.MAX_VALUE))
+        );
+
+        scrollPane.setViewportView(questionPanel);
+
+        submitBtn.setText("Submit SEI");
+
+        studentLabel.setText("Student:");
+        studentLabel.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+
+        javax.swing.GroupLayout surveyPanelLayout = new javax.swing.GroupLayout(surveyPanel);
+        surveyPanel.setLayout(surveyPanelLayout);
+        surveyPanelLayout.setHorizontalGroup(
+            surveyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(surveyPanelLayout.createSequentialGroup()
+                .addGap(29, 29, 29)
+                .addGroup(surveyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(surveyPanelLayout.createSequentialGroup()
+                        .addGap(191, 191, 191)
+                        .addComponent(surveyTitle))
+                    .addGroup(surveyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(scrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 556, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(surveyPanelLayout.createSequentialGroup()
+                            .addGroup(surveyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(courseName)
+                                .addComponent(instructorName))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(surveyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(surveyPanelLayout.createSequentialGroup()
+                                    .addComponent(courseLabel)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(submitBtn))
+                                .addGroup(surveyPanelLayout.createSequentialGroup()
+                                    .addComponent(instructorLabel)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(studentLabel))))))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+        surveyPanelLayout.setVerticalGroup(
+            surveyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(surveyPanelLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(surveyTitle)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(surveyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(surveyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(instructorName)
+                        .addComponent(instructorLabel))
+                    .addComponent(studentLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(surveyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(surveyPanelLayout.createSequentialGroup()
+                        .addComponent(submitBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(scrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 576, Short.MAX_VALUE))
+                    .addGroup(surveyPanelLayout.createSequentialGroup()
+                        .addGroup(surveyPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(courseName)
+                            .addComponent(courseLabel))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(surveyPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(surveyPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -79,5 +268,35 @@ public class EvalSurvey extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup btnGroupQ1;
+    private javax.swing.ButtonGroup btnGroupQ2;
+    private javax.swing.JLabel courseLabel;
+    private javax.swing.JLabel courseName;
+    private javax.swing.JLabel instructorLabel;
+    private javax.swing.JLabel instructorName;
+    private javax.swing.JRadioButton opt1Radio1;
+    private javax.swing.JRadioButton opt1Radio2;
+    private javax.swing.JRadioButton opt2Radio1;
+    private javax.swing.JRadioButton opt2Radio2;
+    private javax.swing.JRadioButton opt3Radio1;
+    private javax.swing.JRadioButton opt3Radio2;
+    private javax.swing.JRadioButton opt4Radio1;
+    private javax.swing.JRadioButton opt4Radio2;
+    private javax.swing.JRadioButton opt5Radio1;
+    private javax.swing.JRadioButton opt5Radio2;
+    private javax.swing.JLabel questionLabel1;
+    private javax.swing.JLabel questionLabel2;
+    private javax.swing.JPanel questionPanel;
+    private javax.swing.JScrollPane scrollPane;
+    private javax.swing.JLabel studentLabel;
+    private javax.swing.JButton submitBtn;
+    private javax.swing.JPanel surveyPanel;
+    private javax.swing.JLabel surveyTitle;
     // End of variables declaration//GEN-END:variables
+
+    void setCourse(String course, String student, String instructor) {
+        courseLabel.setText(course);
+        instructorLabel.setText(instructor);
+        studentLabel.setText("Student: " + student);
+    }
 }

@@ -7,6 +7,7 @@ package parsecsei;
 
 import java.awt.CardLayout;
 import java.util.Arrays;
+import java.util.HashMap;
 import javax.swing.DefaultListModel;
 
 /**
@@ -14,6 +15,11 @@ import javax.swing.DefaultListModel;
  * @author kensible
  */
 public class LoginInterface extends javax.swing.JFrame {
+    
+    private APIConnection api;
+    private HashMap<String, char[]> users;
+    private HashMap<String, String> courses;
+    private String userName = "";
 
     /**
      * Creates new form LoginInterface
@@ -23,7 +29,10 @@ public class LoginInterface extends javax.swing.JFrame {
         cardPanel.add(loginPanel);
         cardPanel.add(coursePanel);
         invalidLabel.setVisible(false);
-        noCourseLabel.setVisible(false);
+        selectionLabel.setVisible(false);
+        
+        api = new APIConnection();
+        users = api.retrieveLogin();
     }
 
     /**
@@ -49,11 +58,11 @@ public class LoginInterface extends javax.swing.JFrame {
         courseScrollPane = new javax.swing.JScrollPane();
         courseList = new javax.swing.JList<>();
         courseBtn = new javax.swing.JButton();
-        noCourseLabel = new javax.swing.JLabel();
+        selectionLabel = new javax.swing.JLabel();
         cardPanel = new javax.swing.JPanel();
 
         loginTitle.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
-        loginTitle.setText("Monongalia School District SEI");
+        loginTitle.setText("College of Monongalia County SEI");
 
         userLabel.setText("Username:");
 
@@ -73,6 +82,10 @@ public class LoginInterface extends javax.swing.JFrame {
         loginPanel.setLayout(loginPanelLayout);
         loginPanelLayout.setHorizontalGroup(
             loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loginPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(loginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
             .addGroup(loginPanelLayout.createSequentialGroup()
                 .addGroup(loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(loginPanelLayout.createSequentialGroup()
@@ -81,20 +94,16 @@ public class LoginInterface extends javax.swing.JFrame {
                     .addGroup(loginPanelLayout.createSequentialGroup()
                         .addGap(38, 38, 38)
                         .addGroup(loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(loginTitle)
-                            .addGroup(loginPanelLayout.createSequentialGroup()
-                                .addGroup(loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(userLabel)
-                                    .addComponent(passLabel))
-                                .addGap(18, 18, 18)
-                                .addGroup(loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(userText)
-                                    .addComponent(passField, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE))))))
-                .addContainerGap(78, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loginPanelLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(loginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36))
+                            .addComponent(userLabel)
+                            .addComponent(passLabel))
+                        .addGap(18, 18, 18)
+                        .addGroup(loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(userText)
+                            .addComponent(passField, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE)))
+                    .addGroup(loginPanelLayout.createSequentialGroup()
+                        .addGap(62, 62, 62)
+                        .addComponent(loginTitle)))
+                .addContainerGap(64, Short.MAX_VALUE))
         );
         loginPanelLayout.setVerticalGroup(
             loginPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -137,52 +146,49 @@ public class LoginInterface extends javax.swing.JFrame {
             }
         });
 
-        noCourseLabel.setFont(new java.awt.Font("Lucida Grande", 2, 14)); // NOI18N
-        noCourseLabel.setText("Error: No Course Selected");
+        selectionLabel.setFont(new java.awt.Font("Lucida Grande", 2, 14)); // NOI18N
+        selectionLabel.setText("Error: No Course Selected");
 
         javax.swing.GroupLayout coursePanelLayout = new javax.swing.GroupLayout(coursePanel);
         coursePanel.setLayout(coursePanelLayout);
         coursePanelLayout.setHorizontalGroup(
             coursePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(coursePanelLayout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(activeUser)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(courseBtn)
+                .addGap(15, 15, 15))
+            .addGroup(coursePanelLayout.createSequentialGroup()
                 .addGroup(coursePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(coursePanelLayout.createSequentialGroup()
                         .addGap(133, 133, 133)
                         .addComponent(courseTitle))
                     .addGroup(coursePanelLayout.createSequentialGroup()
-                        .addGap(96, 96, 96)
+                        .addGap(80, 80, 80)
                         .addGroup(coursePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(noCourseLabel)
-                            .addComponent(courseScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(106, Short.MAX_VALUE))
-            .addGroup(coursePanelLayout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(activeUser)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(courseBtn)
-                .addGap(27, 27, 27))
+                            .addComponent(selectionLabel)
+                            .addComponent(courseScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(88, Short.MAX_VALUE))
         );
         coursePanelLayout.setVerticalGroup(
             coursePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, coursePanelLayout.createSequentialGroup()
-                .addGroup(coursePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(coursePanelLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(coursePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(courseBtn)
-                            .addComponent(activeUser)))
-                    .addGroup(coursePanelLayout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(courseTitle)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(courseScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                        .addComponent(noCourseLabel)
-                        .addGap(41, 41, 41)))
+                .addGap(21, 21, 21)
+                .addComponent(courseTitle)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(courseScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(selectionLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
+                .addGroup(coursePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(courseBtn)
+                    .addComponent(activeUser))
                 .addGap(18, 18, 18))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("SEI Login");
         setResizable(false);
 
         cardPanel.setLayout(new java.awt.CardLayout());
@@ -202,14 +208,15 @@ public class LoginInterface extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginBtnActionPerformed
-        // NEEDS PROPER IMPLEMENTATION
         CardLayout cardLayout = (CardLayout) cardPanel.getLayout();
-        char[] password = "password".toCharArray();
-        if (userText.getText().equals("admin") && 
-                Arrays.equals(password, passField.getPassword())) {
+        if (this.verifyLogin()) {
             System.out.println("[System] Login Sucessful");
-            activeUser.setText(activeUser.getText() + " " + userText.getText());
-            this.retrieveCourses();
+            String[] user_data = api.retrieveUser(userText.getText());
+            userName = user_data[2];
+            activeUser.setText(activeUser.getText() + " " + userName);
+                
+            courses = api.retrieveCourses(user_data[3].split(","));
+            this.displayCourses();
             cardLayout.next(cardPanel);
         } else invalidLabel.setVisible(true);
         passField.setText("");
@@ -217,11 +224,15 @@ public class LoginInterface extends javax.swing.JFrame {
 
     private void courseBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_courseBtnActionPerformed
         if (courseList.isSelectionEmpty())
-            noCourseLabel.setVisible(true);
+            selectionLabel.setVisible(true);
         else {
-            System.out.println("[System] '" + courseList.getSelectedValue() + "' Selected");
+            System.out.println("[System] '" + courseList.getSelectedValue() + "'");
             this.setVisible(false);
-            new EvalSurvey().setVisible(true);
+            EvalSurvey survey = new EvalSurvey();
+            String selectedCourse = courseList.getSelectedValue();
+            String instructorName = courses.get(selectedCourse);
+            survey.setCourse(courseList.getSelectedValue(), userName, instructorName);
+            survey.setVisible(true);
         }
     }//GEN-LAST:event_courseBtnActionPerformed
 
@@ -272,18 +283,24 @@ public class LoginInterface extends javax.swing.JFrame {
     private javax.swing.JButton loginBtn;
     private javax.swing.JPanel loginPanel;
     private javax.swing.JLabel loginTitle;
-    private javax.swing.JLabel noCourseLabel;
     private javax.swing.JPasswordField passField;
     private javax.swing.JLabel passLabel;
+    private javax.swing.JLabel selectionLabel;
     private javax.swing.JLabel userLabel;
     private javax.swing.JTextField userText;
     // End of variables declaration//GEN-END:variables
 
-    private void retrieveCourses() {
-        DefaultListModel<String> model = new DefaultListModel<>(); 
-        model.addElement("CS 220 Discrete Mathematics");
-        model.addElement("CS 221 Data Structures");
-        model.addElement("CS 230 Software Engineering");
+    private boolean verifyLogin() {
+        String username = userText.getText();
+        return users.containsKey(username) && 
+                Arrays.equals(users.get(username), passField.getPassword());
+    }
+    
+    private void displayCourses() {
+        DefaultListModel<String> model = new DefaultListModel<>();
+        courses.keySet().forEach((course) -> {
+            model.addElement(course);
+        });
         courseList.setModel(model);
     }
 }
