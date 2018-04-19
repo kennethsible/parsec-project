@@ -6,6 +6,36 @@
     </Component>
     <Component class="javax.swing.ButtonGroup" name="btnGroupQ2">
     </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupQ3">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupQ4">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupQ5">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupQ6">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupQ7">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupQ8">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupQ9">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupQ10">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupQ11">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupQ12">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupQ13">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupQ14">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupQ15">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupGender">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="btnGroupEmploy">
+    </Component>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -156,217 +186,229 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="questionLabel1" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio1" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="frq1Text" alignment="1" max="32767" attributes="0"/>
+                              <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="questionLabel1" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio1" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="questionLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio2" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio2" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio2" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio2" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio2" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="questionLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio3" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio3" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio3" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio3" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="questionLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio4" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio4" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio4" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio4" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio4" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="questionLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio5" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio5" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio5" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio5" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio5" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="questionLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio6" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio6" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio6" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio6" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio6" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="questionLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio7" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio7" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio7" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio7" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio7" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="questionLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio8" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio8" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio8" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio8" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio8" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="questionLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio9" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio9" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio9" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio9" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio9" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="questionLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio10" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio10" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio10" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio10" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio10" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="questionLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio11" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio11" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio11" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio11" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio11" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="questionLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio12" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio12" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio12" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio12" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio12" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="questionLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio13" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio13" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio13" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio13" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio13" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="questionLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio14" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio14" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio14" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio14" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio14" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="questionLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="opt1Radio15" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt2Radio15" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt3Radio15" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt4Radio15" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="opt5Radio15" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="questionLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="questionLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="maleRadio" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="femaleRadio" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="otherRadio" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="genderText" max="32767" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" attributes="0">
+                                                  <Component id="jTextField1" min="-2" pref="70" max="-2" attributes="0"/>
+                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
                                   </Group>
-                                  <Component id="questionLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="questionLabel18" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio2" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="questionLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="questionLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio4" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio4" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio4" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio4" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio4" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="questionLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio5" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio5" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio5" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio5" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio5" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="questionLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio6" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio6" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio6" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio6" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio6" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="questionLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio7" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="questionLabel8" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio8" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio8" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio8" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio8" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio8" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="questionLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio9" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio9" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio9" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio9" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio9" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="questionLabel10" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio10" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio10" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio10" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio10" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio10" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="questionLabel11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio11" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio11" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio11" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio11" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio11" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="questionLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio12" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio12" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio12" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio12" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio12" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="questionLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio13" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio13" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio13" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio13" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio13" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="questionLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio14" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio14" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio14" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio14" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio14" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="questionLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="opt1Radio15" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt2Radio15" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt3Radio15" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt4Radio15" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="opt5Radio15" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="questionLabel16" min="-2" max="-2" attributes="0"/>
+                                      <Component id="questionLabel20" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="maleRadio" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="femaleRadio" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="otherRadio" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="genderText" max="32767" attributes="0"/>
+                                      <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="questionLabel17" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jTextField1" min="-2" pref="60" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="questionLabel19" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="questionLabel18" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jComboBox1" min="-2" pref="140" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="questionLabel20" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="questionLabel21" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="frq2Text" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace pref="22" max="32767" attributes="0"/>
                       </Group>
@@ -549,7 +591,15 @@
                               <Component id="jRadioButton1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jRadioButton2" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="195" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="questionLabel19" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="frq1Text" min="-2" pref="120" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="questionLabel21" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="frq2Text" min="-2" pref="120" max="-2" attributes="0"/>
+                          <EmptySpace pref="15" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -647,13 +697,13 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="questionLabel3">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="2) Did your professor...?"/>
+                    <Property name="text" type="java.lang.String" value="3) Did your professor...?"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="opt1Radio3">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ3"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Disagree"/>
                   </Properties>
@@ -661,7 +711,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt2Radio3">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ3"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Disagree"/>
                   </Properties>
@@ -669,7 +719,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt3Radio3">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ3"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Neutral"/>
                   </Properties>
@@ -677,7 +727,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt4Radio3">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ3"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Agree"/>
                   </Properties>
@@ -685,20 +735,20 @@
                 <Component class="javax.swing.JRadioButton" name="opt5Radio3">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ3"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Agree"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="questionLabel4">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="2) Did your professor...?"/>
+                    <Property name="text" type="java.lang.String" value="4) Did your professor...?"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="opt1Radio4">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ4"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Disagree"/>
                   </Properties>
@@ -706,7 +756,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt2Radio4">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ4"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Disagree"/>
                   </Properties>
@@ -714,7 +764,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt3Radio4">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ4"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Neutral"/>
                   </Properties>
@@ -722,7 +772,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt4Radio4">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ4"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Agree"/>
                   </Properties>
@@ -730,20 +780,20 @@
                 <Component class="javax.swing.JRadioButton" name="opt5Radio4">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ4"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Agree"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="questionLabel5">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="2) Did your professor...?"/>
+                    <Property name="text" type="java.lang.String" value="5) Did your professor...?"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="opt1Radio5">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ5"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Disagree"/>
                   </Properties>
@@ -751,7 +801,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt2Radio5">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ5"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Disagree"/>
                   </Properties>
@@ -759,7 +809,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt3Radio5">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ5"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Neutral"/>
                   </Properties>
@@ -767,7 +817,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt4Radio5">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ5"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Agree"/>
                   </Properties>
@@ -775,20 +825,20 @@
                 <Component class="javax.swing.JRadioButton" name="opt5Radio5">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ5"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Agree"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="questionLabel6">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="2) Did your professor...?"/>
+                    <Property name="text" type="java.lang.String" value="6) Did your professor...?"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="opt1Radio6">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ6"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Disagree"/>
                   </Properties>
@@ -796,7 +846,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt2Radio6">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ6"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Disagree"/>
                   </Properties>
@@ -804,7 +854,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt3Radio6">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ6"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Neutral"/>
                   </Properties>
@@ -812,7 +862,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt4Radio6">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ6"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Agree"/>
                   </Properties>
@@ -820,20 +870,20 @@
                 <Component class="javax.swing.JRadioButton" name="opt5Radio6">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ6"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Agree"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="questionLabel7">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="2) Did your professor...?"/>
+                    <Property name="text" type="java.lang.String" value="7) Did your professor...?"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="opt1Radio7">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ7"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Disagree"/>
                   </Properties>
@@ -841,7 +891,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt2Radio7">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ7"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Disagree"/>
                   </Properties>
@@ -849,7 +899,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt3Radio7">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ7"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Neutral"/>
                   </Properties>
@@ -857,7 +907,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt4Radio7">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ7"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Agree"/>
                   </Properties>
@@ -865,20 +915,20 @@
                 <Component class="javax.swing.JRadioButton" name="opt5Radio7">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ7"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Agree"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="questionLabel8">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="2) Did your professor...?"/>
+                    <Property name="text" type="java.lang.String" value="8) Did your professor...?"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="opt1Radio8">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ8"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Disagree"/>
                   </Properties>
@@ -886,7 +936,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt2Radio8">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ8"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Disagree"/>
                   </Properties>
@@ -894,7 +944,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt3Radio8">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ8"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Neutral"/>
                   </Properties>
@@ -902,7 +952,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt4Radio8">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ8"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Agree"/>
                   </Properties>
@@ -910,20 +960,20 @@
                 <Component class="javax.swing.JRadioButton" name="opt5Radio8">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ8"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Agree"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="questionLabel9">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="2) Did your professor...?"/>
+                    <Property name="text" type="java.lang.String" value="9) Did your professor...?"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="opt1Radio9">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ9"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Disagree"/>
                   </Properties>
@@ -931,7 +981,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt2Radio9">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ9"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Disagree"/>
                   </Properties>
@@ -939,7 +989,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt3Radio9">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ9"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Neutral"/>
                   </Properties>
@@ -947,7 +997,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt4Radio9">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ9"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Agree"/>
                   </Properties>
@@ -955,20 +1005,20 @@
                 <Component class="javax.swing.JRadioButton" name="opt5Radio9">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ9"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Agree"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="questionLabel10">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="2) Did your professor...?"/>
+                    <Property name="text" type="java.lang.String" value="10) Did your professor...?"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="opt1Radio10">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ10"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Disagree"/>
                   </Properties>
@@ -976,7 +1026,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt2Radio10">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ10"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Disagree"/>
                   </Properties>
@@ -984,7 +1034,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt3Radio10">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ10"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Neutral"/>
                   </Properties>
@@ -992,7 +1042,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt4Radio10">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ10"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Agree"/>
                   </Properties>
@@ -1000,20 +1050,20 @@
                 <Component class="javax.swing.JRadioButton" name="opt5Radio10">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ10"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Agree"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="questionLabel11">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="2) Did your professor...?"/>
+                    <Property name="text" type="java.lang.String" value="11) Did your professor...?"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="opt1Radio11">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ11"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Disagree"/>
                   </Properties>
@@ -1021,7 +1071,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt2Radio11">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ11"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Disagree"/>
                   </Properties>
@@ -1029,7 +1079,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt3Radio11">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ11"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Neutral"/>
                   </Properties>
@@ -1037,7 +1087,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt4Radio11">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ11"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Agree"/>
                   </Properties>
@@ -1045,20 +1095,20 @@
                 <Component class="javax.swing.JRadioButton" name="opt5Radio11">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ11"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Agree"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="questionLabel12">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="2) Did your professor...?"/>
+                    <Property name="text" type="java.lang.String" value="12) Did your professor...?"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="opt1Radio12">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ12"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Disagree"/>
                   </Properties>
@@ -1066,7 +1116,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt2Radio12">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ12"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Disagree"/>
                   </Properties>
@@ -1074,7 +1124,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt3Radio12">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ12"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Neutral"/>
                   </Properties>
@@ -1082,7 +1132,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt4Radio12">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ12"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Agree"/>
                   </Properties>
@@ -1090,20 +1140,20 @@
                 <Component class="javax.swing.JRadioButton" name="opt5Radio12">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ12"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Agree"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="questionLabel13">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="2) Did your professor...?"/>
+                    <Property name="text" type="java.lang.String" value="13) Did your professor...?"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="opt1Radio13">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ13"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Disagree"/>
                   </Properties>
@@ -1111,7 +1161,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt2Radio13">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ13"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Disagree"/>
                   </Properties>
@@ -1119,7 +1169,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt3Radio13">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ13"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Neutral"/>
                   </Properties>
@@ -1127,7 +1177,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt4Radio13">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ13"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Agree"/>
                   </Properties>
@@ -1135,20 +1185,20 @@
                 <Component class="javax.swing.JRadioButton" name="opt5Radio13">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ13"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Agree"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="questionLabel14">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="2) Did your professor...?"/>
+                    <Property name="text" type="java.lang.String" value="14) Did your professor...?"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="opt1Radio14">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ14"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Disagree"/>
                   </Properties>
@@ -1156,7 +1206,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt2Radio14">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ14"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Disagree"/>
                   </Properties>
@@ -1164,7 +1214,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt3Radio14">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ14"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Neutral"/>
                   </Properties>
@@ -1172,7 +1222,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt4Radio14">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ14"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Agree"/>
                   </Properties>
@@ -1180,20 +1230,20 @@
                 <Component class="javax.swing.JRadioButton" name="opt5Radio14">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ14"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Agree"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JLabel" name="questionLabel15">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="2) Did your professor...?"/>
+                    <Property name="text" type="java.lang.String" value="15) Did your professor...?"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="opt1Radio15">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ15"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Disagree"/>
                   </Properties>
@@ -1201,7 +1251,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt2Radio15">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ15"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Disagree"/>
                   </Properties>
@@ -1209,7 +1259,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt3Radio15">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ15"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Neutral"/>
                   </Properties>
@@ -1217,7 +1267,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt4Radio15">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ15"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Agree"/>
                   </Properties>
@@ -1225,7 +1275,7 @@
                 <Component class="javax.swing.JRadioButton" name="opt5Radio15">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="btnGroupQ2"/>
+                      <ComponentRef name="btnGroupQ15"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Strongly Agree"/>
                   </Properties>
@@ -1237,18 +1287,30 @@
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="maleRadio">
                   <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="btnGroupGender"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Male"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="femaleRadio">
                   <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="btnGroupGender"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Female"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="otherRadio">
                   <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="btnGroupGender"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Other"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="otherRadioActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JTextField" name="genderText">
                   <Properties>
@@ -1257,7 +1319,7 @@
                 </Component>
                 <Component class="javax.swing.JLabel" name="questionLabel17">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Please indicate your age:"/>
+                    <Property name="text" type="java.lang.String" value="Please indicate your current age:"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="jTextField1">
@@ -1291,13 +1353,33 @@
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="jRadioButton1">
                   <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="btnGroupEmploy"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="Yes"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="jRadioButton2">
                   <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="btnGroupEmploy"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="No"/>
                   </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="questionLabel19">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="1) Did your professor...?"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="frq1Text">
+                </Component>
+                <Component class="javax.swing.JLabel" name="questionLabel21">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="2) Did your professor...?"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="frq2Text">
                 </Component>
               </SubComponents>
             </Container>
