@@ -138,8 +138,6 @@ public class EvalSurvey extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         questionLabel18 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
-        questionLabel19 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
         questionLabel20 = new javax.swing.JLabel();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
@@ -434,10 +432,6 @@ public class EvalSurvey extends javax.swing.JFrame {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Please Select...", "White/Caucasian", "Hispanic/Latino", "Black/African American", "Asian", "Other" }));
 
-        questionLabel19.setText("Please indicate your marital status:");
-
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
         questionLabel20.setText("Please indicate your employment status:");
 
         jRadioButton1.setText("Yes");
@@ -636,10 +630,6 @@ public class EvalSurvey extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(questionPanelLayout.createSequentialGroup()
-                        .addComponent(questionLabel19)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(questionPanelLayout.createSequentialGroup()
                         .addComponent(questionLabel20)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jRadioButton1)
@@ -802,14 +792,10 @@ public class EvalSurvey extends javax.swing.JFrame {
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(questionLabel19)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(questionLabel20)
                     .addComponent(jRadioButton1)
                     .addComponent(jRadioButton2))
-                .addContainerGap(162, Short.MAX_VALUE))
+                .addContainerGap(195, Short.MAX_VALUE))
         );
 
         scrollPane.setViewportView(questionPanel);
@@ -931,7 +917,6 @@ public class EvalSurvey extends javax.swing.JFrame {
     private javax.swing.JLabel instructorLabel;
     private javax.swing.JLabel instructorName;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JTextField jTextField1;
@@ -1022,7 +1007,6 @@ public class EvalSurvey extends javax.swing.JFrame {
     private javax.swing.JLabel questionLabel16;
     private javax.swing.JLabel questionLabel17;
     private javax.swing.JLabel questionLabel18;
-    private javax.swing.JLabel questionLabel19;
     private javax.swing.JLabel questionLabel2;
     private javax.swing.JLabel questionLabel20;
     private javax.swing.JLabel questionLabel3;

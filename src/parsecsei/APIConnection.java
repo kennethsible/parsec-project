@@ -7,6 +7,7 @@ package parsecsei;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -19,6 +20,8 @@ public class APIConnection {
     private HashMap<String, char[]> login;
     private HashMap<String, String> courses;
     private HashMap<String, String[]> users;
+    private HashMap<Boolean, String> qpool;
+    private ArrayList<String> questions;
     
     public APIConnection() {
         File login_db = new File("login_database.txt");
@@ -56,6 +59,31 @@ public class APIConnection {
         } catch (FileNotFoundException e) {
             System.err.println("[System] Course Database Failure");
         }
+        
+        File qp_db = new File("qp_database.txt");
+        qpool = new HashMap<>();
+        try {
+            Scanner reader = new Scanner(qp_db);
+            while(reader.hasNext()) {
+                String[] qpInfo = reader.nextLine().split(";");
+                qpool.put(qpInfo[0].equals("enabled"), qpInfo[1]);
+            }
+        } catch (FileNotFoundException e) {
+            System.err.println("[System] Question Pool Database Failure");
+        }
+        
+        File select_db = new File("select_database.txt");
+        questions = new ArrayList<>();
+        try {
+            Scanner reader = new Scanner(select_db);
+            while(reader.hasNext()) {
+                questions.add(reader.nextLine());
+            }
+        } catch (FileNotFoundException e) {
+            System.err.println("[System] Selection Database Failure");
+        }
+        for (String question : questions)
+                System.out.println(question);
     }
     
     public HashMap<String, char[]> retrieveLogin() {
@@ -74,5 +102,15 @@ public class APIConnection {
         }
         return courseList;
     }
+    
+    public HashMap<Boolean, String> retrieveQPool() {
+        return qpool;
+    }
+    
+    public ArrayList<String> retrieveQuestions() {
+        return questions;
+    }
+    
+    
     
 }
