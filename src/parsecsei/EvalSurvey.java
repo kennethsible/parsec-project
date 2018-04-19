@@ -10,6 +10,8 @@ package parsecsei;
  * @author kensible
  */
 public class EvalSurvey extends javax.swing.JFrame {
+    
+    private Time surveyTime;
 
     /**
      * Creates new form EvalSurvey
@@ -49,6 +51,98 @@ public class EvalSurvey extends javax.swing.JFrame {
         opt3Radio2 = new javax.swing.JRadioButton();
         opt4Radio2 = new javax.swing.JRadioButton();
         opt5Radio2 = new javax.swing.JRadioButton();
+        questionLabel3 = new javax.swing.JLabel();
+        opt1Radio3 = new javax.swing.JRadioButton();
+        opt2Radio3 = new javax.swing.JRadioButton();
+        opt3Radio3 = new javax.swing.JRadioButton();
+        opt4Radio3 = new javax.swing.JRadioButton();
+        opt5Radio3 = new javax.swing.JRadioButton();
+        questionLabel4 = new javax.swing.JLabel();
+        opt1Radio4 = new javax.swing.JRadioButton();
+        opt2Radio4 = new javax.swing.JRadioButton();
+        opt3Radio4 = new javax.swing.JRadioButton();
+        opt4Radio4 = new javax.swing.JRadioButton();
+        opt5Radio4 = new javax.swing.JRadioButton();
+        questionLabel5 = new javax.swing.JLabel();
+        opt1Radio5 = new javax.swing.JRadioButton();
+        opt2Radio5 = new javax.swing.JRadioButton();
+        opt3Radio5 = new javax.swing.JRadioButton();
+        opt4Radio5 = new javax.swing.JRadioButton();
+        opt5Radio5 = new javax.swing.JRadioButton();
+        questionLabel6 = new javax.swing.JLabel();
+        opt1Radio6 = new javax.swing.JRadioButton();
+        opt2Radio6 = new javax.swing.JRadioButton();
+        opt3Radio6 = new javax.swing.JRadioButton();
+        opt4Radio6 = new javax.swing.JRadioButton();
+        opt5Radio6 = new javax.swing.JRadioButton();
+        questionLabel7 = new javax.swing.JLabel();
+        opt1Radio7 = new javax.swing.JRadioButton();
+        opt2Radio7 = new javax.swing.JRadioButton();
+        opt3Radio7 = new javax.swing.JRadioButton();
+        opt4Radio7 = new javax.swing.JRadioButton();
+        opt5Radio7 = new javax.swing.JRadioButton();
+        questionLabel8 = new javax.swing.JLabel();
+        opt1Radio8 = new javax.swing.JRadioButton();
+        opt2Radio8 = new javax.swing.JRadioButton();
+        opt3Radio8 = new javax.swing.JRadioButton();
+        opt4Radio8 = new javax.swing.JRadioButton();
+        opt5Radio8 = new javax.swing.JRadioButton();
+        questionLabel9 = new javax.swing.JLabel();
+        opt1Radio9 = new javax.swing.JRadioButton();
+        opt2Radio9 = new javax.swing.JRadioButton();
+        opt3Radio9 = new javax.swing.JRadioButton();
+        opt4Radio9 = new javax.swing.JRadioButton();
+        opt5Radio9 = new javax.swing.JRadioButton();
+        questionLabel10 = new javax.swing.JLabel();
+        opt1Radio10 = new javax.swing.JRadioButton();
+        opt2Radio10 = new javax.swing.JRadioButton();
+        opt3Radio10 = new javax.swing.JRadioButton();
+        opt4Radio10 = new javax.swing.JRadioButton();
+        opt5Radio10 = new javax.swing.JRadioButton();
+        questionLabel11 = new javax.swing.JLabel();
+        opt1Radio11 = new javax.swing.JRadioButton();
+        opt2Radio11 = new javax.swing.JRadioButton();
+        opt3Radio11 = new javax.swing.JRadioButton();
+        opt4Radio11 = new javax.swing.JRadioButton();
+        opt5Radio11 = new javax.swing.JRadioButton();
+        questionLabel12 = new javax.swing.JLabel();
+        opt1Radio12 = new javax.swing.JRadioButton();
+        opt2Radio12 = new javax.swing.JRadioButton();
+        opt3Radio12 = new javax.swing.JRadioButton();
+        opt4Radio12 = new javax.swing.JRadioButton();
+        opt5Radio12 = new javax.swing.JRadioButton();
+        questionLabel13 = new javax.swing.JLabel();
+        opt1Radio13 = new javax.swing.JRadioButton();
+        opt2Radio13 = new javax.swing.JRadioButton();
+        opt3Radio13 = new javax.swing.JRadioButton();
+        opt4Radio13 = new javax.swing.JRadioButton();
+        opt5Radio13 = new javax.swing.JRadioButton();
+        questionLabel14 = new javax.swing.JLabel();
+        opt1Radio14 = new javax.swing.JRadioButton();
+        opt2Radio14 = new javax.swing.JRadioButton();
+        opt3Radio14 = new javax.swing.JRadioButton();
+        opt4Radio14 = new javax.swing.JRadioButton();
+        opt5Radio14 = new javax.swing.JRadioButton();
+        questionLabel15 = new javax.swing.JLabel();
+        opt1Radio15 = new javax.swing.JRadioButton();
+        opt2Radio15 = new javax.swing.JRadioButton();
+        opt3Radio15 = new javax.swing.JRadioButton();
+        opt4Radio15 = new javax.swing.JRadioButton();
+        opt5Radio15 = new javax.swing.JRadioButton();
+        questionLabel16 = new javax.swing.JLabel();
+        maleRadio = new javax.swing.JRadioButton();
+        femaleRadio = new javax.swing.JRadioButton();
+        otherRadio = new javax.swing.JRadioButton();
+        genderText = new javax.swing.JTextField();
+        questionLabel17 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        questionLabel18 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        questionLabel19 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        questionLabel20 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
         submitBtn = new javax.swing.JButton();
         studentLabel = new javax.swing.JLabel();
 
@@ -103,6 +197,253 @@ public class EvalSurvey extends javax.swing.JFrame {
         btnGroupQ2.add(opt5Radio2);
         opt5Radio2.setText("Strongly Agree");
 
+        questionLabel3.setText("2) Did your professor...?");
+
+        btnGroupQ2.add(opt1Radio3);
+        opt1Radio3.setText("Strongly Disagree");
+
+        btnGroupQ2.add(opt2Radio3);
+        opt2Radio3.setText("Disagree");
+
+        btnGroupQ2.add(opt3Radio3);
+        opt3Radio3.setText("Neutral");
+
+        btnGroupQ2.add(opt4Radio3);
+        opt4Radio3.setText("Agree");
+
+        btnGroupQ2.add(opt5Radio3);
+        opt5Radio3.setText("Strongly Agree");
+
+        questionLabel4.setText("2) Did your professor...?");
+
+        btnGroupQ2.add(opt1Radio4);
+        opt1Radio4.setText("Strongly Disagree");
+
+        btnGroupQ2.add(opt2Radio4);
+        opt2Radio4.setText("Disagree");
+
+        btnGroupQ2.add(opt3Radio4);
+        opt3Radio4.setText("Neutral");
+
+        btnGroupQ2.add(opt4Radio4);
+        opt4Radio4.setText("Agree");
+
+        btnGroupQ2.add(opt5Radio4);
+        opt5Radio4.setText("Strongly Agree");
+
+        questionLabel5.setText("2) Did your professor...?");
+
+        btnGroupQ2.add(opt1Radio5);
+        opt1Radio5.setText("Strongly Disagree");
+
+        btnGroupQ2.add(opt2Radio5);
+        opt2Radio5.setText("Disagree");
+
+        btnGroupQ2.add(opt3Radio5);
+        opt3Radio5.setText("Neutral");
+
+        btnGroupQ2.add(opt4Radio5);
+        opt4Radio5.setText("Agree");
+
+        btnGroupQ2.add(opt5Radio5);
+        opt5Radio5.setText("Strongly Agree");
+
+        questionLabel6.setText("2) Did your professor...?");
+
+        btnGroupQ2.add(opt1Radio6);
+        opt1Radio6.setText("Strongly Disagree");
+
+        btnGroupQ2.add(opt2Radio6);
+        opt2Radio6.setText("Disagree");
+
+        btnGroupQ2.add(opt3Radio6);
+        opt3Radio6.setText("Neutral");
+
+        btnGroupQ2.add(opt4Radio6);
+        opt4Radio6.setText("Agree");
+
+        btnGroupQ2.add(opt5Radio6);
+        opt5Radio6.setText("Strongly Agree");
+
+        questionLabel7.setText("2) Did your professor...?");
+
+        btnGroupQ2.add(opt1Radio7);
+        opt1Radio7.setText("Strongly Disagree");
+
+        btnGroupQ2.add(opt2Radio7);
+        opt2Radio7.setText("Disagree");
+
+        btnGroupQ2.add(opt3Radio7);
+        opt3Radio7.setText("Neutral");
+
+        btnGroupQ2.add(opt4Radio7);
+        opt4Radio7.setText("Agree");
+
+        btnGroupQ2.add(opt5Radio7);
+        opt5Radio7.setText("Strongly Agree");
+
+        questionLabel8.setText("2) Did your professor...?");
+
+        btnGroupQ2.add(opt1Radio8);
+        opt1Radio8.setText("Strongly Disagree");
+
+        btnGroupQ2.add(opt2Radio8);
+        opt2Radio8.setText("Disagree");
+
+        btnGroupQ2.add(opt3Radio8);
+        opt3Radio8.setText("Neutral");
+
+        btnGroupQ2.add(opt4Radio8);
+        opt4Radio8.setText("Agree");
+
+        btnGroupQ2.add(opt5Radio8);
+        opt5Radio8.setText("Strongly Agree");
+
+        questionLabel9.setText("2) Did your professor...?");
+
+        btnGroupQ2.add(opt1Radio9);
+        opt1Radio9.setText("Strongly Disagree");
+
+        btnGroupQ2.add(opt2Radio9);
+        opt2Radio9.setText("Disagree");
+
+        btnGroupQ2.add(opt3Radio9);
+        opt3Radio9.setText("Neutral");
+
+        btnGroupQ2.add(opt4Radio9);
+        opt4Radio9.setText("Agree");
+
+        btnGroupQ2.add(opt5Radio9);
+        opt5Radio9.setText("Strongly Agree");
+
+        questionLabel10.setText("2) Did your professor...?");
+
+        btnGroupQ2.add(opt1Radio10);
+        opt1Radio10.setText("Strongly Disagree");
+
+        btnGroupQ2.add(opt2Radio10);
+        opt2Radio10.setText("Disagree");
+
+        btnGroupQ2.add(opt3Radio10);
+        opt3Radio10.setText("Neutral");
+
+        btnGroupQ2.add(opt4Radio10);
+        opt4Radio10.setText("Agree");
+
+        btnGroupQ2.add(opt5Radio10);
+        opt5Radio10.setText("Strongly Agree");
+
+        questionLabel11.setText("2) Did your professor...?");
+
+        btnGroupQ2.add(opt1Radio11);
+        opt1Radio11.setText("Strongly Disagree");
+
+        btnGroupQ2.add(opt2Radio11);
+        opt2Radio11.setText("Disagree");
+
+        btnGroupQ2.add(opt3Radio11);
+        opt3Radio11.setText("Neutral");
+
+        btnGroupQ2.add(opt4Radio11);
+        opt4Radio11.setText("Agree");
+
+        btnGroupQ2.add(opt5Radio11);
+        opt5Radio11.setText("Strongly Agree");
+
+        questionLabel12.setText("2) Did your professor...?");
+
+        btnGroupQ2.add(opt1Radio12);
+        opt1Radio12.setText("Strongly Disagree");
+
+        btnGroupQ2.add(opt2Radio12);
+        opt2Radio12.setText("Disagree");
+
+        btnGroupQ2.add(opt3Radio12);
+        opt3Radio12.setText("Neutral");
+
+        btnGroupQ2.add(opt4Radio12);
+        opt4Radio12.setText("Agree");
+
+        btnGroupQ2.add(opt5Radio12);
+        opt5Radio12.setText("Strongly Agree");
+
+        questionLabel13.setText("2) Did your professor...?");
+
+        btnGroupQ2.add(opt1Radio13);
+        opt1Radio13.setText("Strongly Disagree");
+
+        btnGroupQ2.add(opt2Radio13);
+        opt2Radio13.setText("Disagree");
+
+        btnGroupQ2.add(opt3Radio13);
+        opt3Radio13.setText("Neutral");
+
+        btnGroupQ2.add(opt4Radio13);
+        opt4Radio13.setText("Agree");
+
+        btnGroupQ2.add(opt5Radio13);
+        opt5Radio13.setText("Strongly Agree");
+
+        questionLabel14.setText("2) Did your professor...?");
+
+        btnGroupQ2.add(opt1Radio14);
+        opt1Radio14.setText("Strongly Disagree");
+
+        btnGroupQ2.add(opt2Radio14);
+        opt2Radio14.setText("Disagree");
+
+        btnGroupQ2.add(opt3Radio14);
+        opt3Radio14.setText("Neutral");
+
+        btnGroupQ2.add(opt4Radio14);
+        opt4Radio14.setText("Agree");
+
+        btnGroupQ2.add(opt5Radio14);
+        opt5Radio14.setText("Strongly Agree");
+
+        questionLabel15.setText("2) Did your professor...?");
+
+        btnGroupQ2.add(opt1Radio15);
+        opt1Radio15.setText("Strongly Disagree");
+
+        btnGroupQ2.add(opt2Radio15);
+        opt2Radio15.setText("Disagree");
+
+        btnGroupQ2.add(opt3Radio15);
+        opt3Radio15.setText("Neutral");
+
+        btnGroupQ2.add(opt4Radio15);
+        opt4Radio15.setText("Agree");
+
+        btnGroupQ2.add(opt5Radio15);
+        opt5Radio15.setText("Strongly Agree");
+
+        questionLabel16.setText("Please indicate your gender:");
+
+        maleRadio.setText("Male");
+
+        femaleRadio.setText("Female");
+
+        otherRadio.setText("Other");
+
+        genderText.setEditable(false);
+
+        questionLabel17.setText("Please indicate your age:");
+
+        questionLabel18.setText("Please indicate your ethnicity:");
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Please Select...", "White/Caucasian", "Hispanic/Latino", "Black/African American", "Asian", "Other" }));
+
+        questionLabel19.setText("Please indicate your marital status:");
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        questionLabel20.setText("Please indicate your employment status:");
+
+        jRadioButton1.setText("Yes");
+
+        jRadioButton2.setText("No");
+
         javax.swing.GroupLayout questionPanelLayout = new javax.swing.GroupLayout(questionPanel);
         questionPanel.setLayout(questionPanelLayout);
         questionPanelLayout.setHorizontalGroup(
@@ -110,28 +451,200 @@ public class EvalSurvey extends javax.swing.JFrame {
             .addGroup(questionPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(questionLabel1)
+                    .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(questionLabel1)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio1)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio1)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio1)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio1)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio1))
+                        .addComponent(questionLabel2)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio2)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio2)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio2)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio2)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio2))
+                        .addComponent(questionLabel3)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio3)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio3)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio3)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio3)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio3))
+                        .addComponent(questionLabel4)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio4)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio4)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio4)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio4)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio4))
+                        .addComponent(questionLabel5)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio5)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio5)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio5)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio5)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio5))
+                        .addComponent(questionLabel6)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio6)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio6)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio6)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio6)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio6))
+                        .addComponent(questionLabel7)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio7)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio7)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio7)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio7)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio7))
+                        .addComponent(questionLabel8)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio8)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio8)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio8)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio8)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio8))
+                        .addComponent(questionLabel9)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio9)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio9)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio9)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio9)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio9))
+                        .addComponent(questionLabel10)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio10)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio10)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio10)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio10)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio10))
+                        .addComponent(questionLabel11)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio11)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio11)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio11)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio11)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio11))
+                        .addComponent(questionLabel12)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio12)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio12)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio12)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio12)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio12))
+                        .addComponent(questionLabel13)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio13)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio13)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio13)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio13)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio13))
+                        .addComponent(questionLabel14)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio14)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio14)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio14)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio14)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio14))
+                        .addComponent(questionLabel15)
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(opt1Radio15)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt2Radio15)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt3Radio15)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt4Radio15)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(opt5Radio15))
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(questionLabel16)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(maleRadio)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(femaleRadio)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(otherRadio)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(genderText))
+                        .addGroup(questionPanelLayout.createSequentialGroup()
+                            .addComponent(questionLabel17)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(questionPanelLayout.createSequentialGroup()
-                        .addComponent(opt1Radio1)
+                        .addComponent(questionLabel18)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(opt2Radio1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(opt3Radio1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(opt4Radio1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(opt5Radio1))
-                    .addComponent(questionLabel2)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(questionPanelLayout.createSequentialGroup()
-                        .addComponent(opt1Radio2)
+                        .addComponent(questionLabel19)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(opt2Radio2)
+                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(questionPanelLayout.createSequentialGroup()
+                        .addComponent(questionLabel20)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(opt3Radio2)
+                        .addComponent(jRadioButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(opt4Radio2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(opt5Radio2)))
+                        .addComponent(jRadioButton2)))
                 .addContainerGap(22, Short.MAX_VALUE))
         );
         questionPanelLayout.setVerticalGroup(
@@ -155,7 +668,148 @@ public class EvalSurvey extends javax.swing.JFrame {
                     .addComponent(opt3Radio2)
                     .addComponent(opt4Radio2)
                     .addComponent(opt5Radio2))
-                .addContainerGap(459, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(questionLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio3)
+                    .addComponent(opt2Radio3)
+                    .addComponent(opt3Radio3)
+                    .addComponent(opt4Radio3)
+                    .addComponent(opt5Radio3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(questionLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio4)
+                    .addComponent(opt2Radio4)
+                    .addComponent(opt3Radio4)
+                    .addComponent(opt4Radio4)
+                    .addComponent(opt5Radio4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(questionLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio5)
+                    .addComponent(opt2Radio5)
+                    .addComponent(opt3Radio5)
+                    .addComponent(opt4Radio5)
+                    .addComponent(opt5Radio5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(questionLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio6)
+                    .addComponent(opt2Radio6)
+                    .addComponent(opt3Radio6)
+                    .addComponent(opt4Radio6)
+                    .addComponent(opt5Radio6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(questionLabel7)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio7)
+                    .addComponent(opt2Radio7)
+                    .addComponent(opt3Radio7)
+                    .addComponent(opt4Radio7)
+                    .addComponent(opt5Radio7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(questionLabel8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio8)
+                    .addComponent(opt2Radio8)
+                    .addComponent(opt3Radio8)
+                    .addComponent(opt4Radio8)
+                    .addComponent(opt5Radio8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(questionLabel9)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio9)
+                    .addComponent(opt2Radio9)
+                    .addComponent(opt3Radio9)
+                    .addComponent(opt4Radio9)
+                    .addComponent(opt5Radio9))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(questionLabel10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio10)
+                    .addComponent(opt2Radio10)
+                    .addComponent(opt3Radio10)
+                    .addComponent(opt4Radio10)
+                    .addComponent(opt5Radio10))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(questionLabel11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio11)
+                    .addComponent(opt2Radio11)
+                    .addComponent(opt3Radio11)
+                    .addComponent(opt4Radio11)
+                    .addComponent(opt5Radio11))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(questionLabel12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio12)
+                    .addComponent(opt2Radio12)
+                    .addComponent(opt3Radio12)
+                    .addComponent(opt4Radio12)
+                    .addComponent(opt5Radio12))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(questionLabel13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio13)
+                    .addComponent(opt2Radio13)
+                    .addComponent(opt3Radio13)
+                    .addComponent(opt4Radio13)
+                    .addComponent(opt5Radio13))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(questionLabel14)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio14)
+                    .addComponent(opt2Radio14)
+                    .addComponent(opt3Radio14)
+                    .addComponent(opt4Radio14)
+                    .addComponent(opt5Radio14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(questionLabel15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(opt1Radio15)
+                    .addComponent(opt2Radio15)
+                    .addComponent(opt3Radio15)
+                    .addComponent(opt4Radio15)
+                    .addComponent(opt5Radio15))
+                .addGap(18, 18, 18)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(questionLabel16)
+                    .addComponent(maleRadio)
+                    .addComponent(femaleRadio)
+                    .addComponent(otherRadio)
+                    .addComponent(genderText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(questionLabel17)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(questionLabel18)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(questionLabel19)
+                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(questionPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(questionLabel20)
+                    .addComponent(jRadioButton1)
+                    .addComponent(jRadioButton2))
+                .addContainerGap(162, Short.MAX_VALUE))
         );
 
         scrollPane.setViewportView(questionPanel);
@@ -272,20 +926,112 @@ public class EvalSurvey extends javax.swing.JFrame {
     private javax.swing.ButtonGroup btnGroupQ2;
     private javax.swing.JLabel courseLabel;
     private javax.swing.JLabel courseName;
+    private javax.swing.JRadioButton femaleRadio;
+    private javax.swing.JTextField genderText;
     private javax.swing.JLabel instructorLabel;
     private javax.swing.JLabel instructorName;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JRadioButton maleRadio;
     private javax.swing.JRadioButton opt1Radio1;
+    private javax.swing.JRadioButton opt1Radio10;
+    private javax.swing.JRadioButton opt1Radio11;
+    private javax.swing.JRadioButton opt1Radio12;
+    private javax.swing.JRadioButton opt1Radio13;
+    private javax.swing.JRadioButton opt1Radio14;
+    private javax.swing.JRadioButton opt1Radio15;
     private javax.swing.JRadioButton opt1Radio2;
+    private javax.swing.JRadioButton opt1Radio3;
+    private javax.swing.JRadioButton opt1Radio4;
+    private javax.swing.JRadioButton opt1Radio5;
+    private javax.swing.JRadioButton opt1Radio6;
+    private javax.swing.JRadioButton opt1Radio7;
+    private javax.swing.JRadioButton opt1Radio8;
+    private javax.swing.JRadioButton opt1Radio9;
     private javax.swing.JRadioButton opt2Radio1;
+    private javax.swing.JRadioButton opt2Radio10;
+    private javax.swing.JRadioButton opt2Radio11;
+    private javax.swing.JRadioButton opt2Radio12;
+    private javax.swing.JRadioButton opt2Radio13;
+    private javax.swing.JRadioButton opt2Radio14;
+    private javax.swing.JRadioButton opt2Radio15;
     private javax.swing.JRadioButton opt2Radio2;
+    private javax.swing.JRadioButton opt2Radio3;
+    private javax.swing.JRadioButton opt2Radio4;
+    private javax.swing.JRadioButton opt2Radio5;
+    private javax.swing.JRadioButton opt2Radio6;
+    private javax.swing.JRadioButton opt2Radio7;
+    private javax.swing.JRadioButton opt2Radio8;
+    private javax.swing.JRadioButton opt2Radio9;
     private javax.swing.JRadioButton opt3Radio1;
+    private javax.swing.JRadioButton opt3Radio10;
+    private javax.swing.JRadioButton opt3Radio11;
+    private javax.swing.JRadioButton opt3Radio12;
+    private javax.swing.JRadioButton opt3Radio13;
+    private javax.swing.JRadioButton opt3Radio14;
+    private javax.swing.JRadioButton opt3Radio15;
     private javax.swing.JRadioButton opt3Radio2;
+    private javax.swing.JRadioButton opt3Radio3;
+    private javax.swing.JRadioButton opt3Radio4;
+    private javax.swing.JRadioButton opt3Radio5;
+    private javax.swing.JRadioButton opt3Radio6;
+    private javax.swing.JRadioButton opt3Radio7;
+    private javax.swing.JRadioButton opt3Radio8;
+    private javax.swing.JRadioButton opt3Radio9;
     private javax.swing.JRadioButton opt4Radio1;
+    private javax.swing.JRadioButton opt4Radio10;
+    private javax.swing.JRadioButton opt4Radio11;
+    private javax.swing.JRadioButton opt4Radio12;
+    private javax.swing.JRadioButton opt4Radio13;
+    private javax.swing.JRadioButton opt4Radio14;
+    private javax.swing.JRadioButton opt4Radio15;
     private javax.swing.JRadioButton opt4Radio2;
+    private javax.swing.JRadioButton opt4Radio3;
+    private javax.swing.JRadioButton opt4Radio4;
+    private javax.swing.JRadioButton opt4Radio5;
+    private javax.swing.JRadioButton opt4Radio6;
+    private javax.swing.JRadioButton opt4Radio7;
+    private javax.swing.JRadioButton opt4Radio8;
+    private javax.swing.JRadioButton opt4Radio9;
     private javax.swing.JRadioButton opt5Radio1;
+    private javax.swing.JRadioButton opt5Radio10;
+    private javax.swing.JRadioButton opt5Radio11;
+    private javax.swing.JRadioButton opt5Radio12;
+    private javax.swing.JRadioButton opt5Radio13;
+    private javax.swing.JRadioButton opt5Radio14;
+    private javax.swing.JRadioButton opt5Radio15;
     private javax.swing.JRadioButton opt5Radio2;
+    private javax.swing.JRadioButton opt5Radio3;
+    private javax.swing.JRadioButton opt5Radio4;
+    private javax.swing.JRadioButton opt5Radio5;
+    private javax.swing.JRadioButton opt5Radio6;
+    private javax.swing.JRadioButton opt5Radio7;
+    private javax.swing.JRadioButton opt5Radio8;
+    private javax.swing.JRadioButton opt5Radio9;
+    private javax.swing.JRadioButton otherRadio;
     private javax.swing.JLabel questionLabel1;
+    private javax.swing.JLabel questionLabel10;
+    private javax.swing.JLabel questionLabel11;
+    private javax.swing.JLabel questionLabel12;
+    private javax.swing.JLabel questionLabel13;
+    private javax.swing.JLabel questionLabel14;
+    private javax.swing.JLabel questionLabel15;
+    private javax.swing.JLabel questionLabel16;
+    private javax.swing.JLabel questionLabel17;
+    private javax.swing.JLabel questionLabel18;
+    private javax.swing.JLabel questionLabel19;
     private javax.swing.JLabel questionLabel2;
+    private javax.swing.JLabel questionLabel20;
+    private javax.swing.JLabel questionLabel3;
+    private javax.swing.JLabel questionLabel4;
+    private javax.swing.JLabel questionLabel5;
+    private javax.swing.JLabel questionLabel6;
+    private javax.swing.JLabel questionLabel7;
+    private javax.swing.JLabel questionLabel8;
+    private javax.swing.JLabel questionLabel9;
     private javax.swing.JPanel questionPanel;
     private javax.swing.JScrollPane scrollPane;
     private javax.swing.JLabel studentLabel;
@@ -298,5 +1044,47 @@ public class EvalSurvey extends javax.swing.JFrame {
         courseLabel.setText(course);
         instructorLabel.setText(instructor);
         studentLabel.setText("Student: " + student);
+    }
+    
+    public void setTime(String start, String stop) {
+        surveyTime = new Time(start, stop);
+    }
+    
+    public String[] getTime() {
+        String[] times = {surveyTime.getStart(), surveyTime.getStop()};
+        return times;
+    }
+    
+    private class Time {
+        
+        private String start, stop;
+        
+        public Time(String start, String stop) {
+            if (!verifyFormat(this.start) || !verifyFormat(this.stop))
+                throw new RuntimeException("Invalid Format: YYYY-MM-DD");
+            this.start = start;
+            this.stop = stop;
+        }
+        
+        public String getStart() {
+            return this.start;
+        }
+        
+        public String getStop() {
+            return this.stop;
+        }
+        
+        public void setStart(String time) {
+            this.start = time;
+        }
+        
+        public void setStop(String time) {
+            this.stop = time;
+        }
+        
+        private boolean verifyFormat(String time) {
+            return time.matches("\\d{4}-\\d{2}-\\d{2}");
+        }
+        
     }
 }

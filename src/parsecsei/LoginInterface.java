@@ -17,6 +17,7 @@ import javax.swing.DefaultListModel;
 public class LoginInterface extends javax.swing.JFrame {
     
     private APIConnection api;
+    private EvalSurvey survey;
     private HashMap<String, char[]> users;
     private HashMap<String, String> courses;
     private String userName = "";
@@ -32,6 +33,7 @@ public class LoginInterface extends javax.swing.JFrame {
         selectionLabel.setVisible(false);
         
         api = new APIConnection();
+        survey = new EvalSurvey();
         users = api.retrieveLogin();
     }
 
@@ -162,14 +164,14 @@ public class LoginInterface extends javax.swing.JFrame {
             .addGroup(coursePanelLayout.createSequentialGroup()
                 .addGroup(coursePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(coursePanelLayout.createSequentialGroup()
-                        .addGap(133, 133, 133)
+                        .addGap(137, 137, 137)
                         .addComponent(courseTitle))
                     .addGroup(coursePanelLayout.createSequentialGroup()
-                        .addGap(80, 80, 80)
+                        .addGap(60, 60, 60)
                         .addGroup(coursePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(selectionLabel)
-                            .addComponent(courseScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(88, Short.MAX_VALUE))
+                            .addComponent(courseScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 312, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
         coursePanelLayout.setVerticalGroup(
             coursePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -217,7 +219,9 @@ public class LoginInterface extends javax.swing.JFrame {
                 
             courses = api.retrieveCourses(user_data[3].split(","));
             this.displayCourses();
-            cardLayout.next(cardPanel);
+            if (user_data[1].equals("student"))
+                cardLayout.next(cardPanel);
+            else throw new RuntimeException("Not Student");
         } else invalidLabel.setVisible(true);
         passField.setText("");
     }//GEN-LAST:event_loginBtnActionPerformed
@@ -228,10 +232,11 @@ public class LoginInterface extends javax.swing.JFrame {
         else {
             System.out.println("[System] '" + courseList.getSelectedValue() + "'");
             this.setVisible(false);
-            EvalSurvey survey = new EvalSurvey();
-            String selectedCourse = courseList.getSelectedValue();
+            //EvalSurvey survey = new EvalSurvey();
+            String selectedCourse = courseList.getSelectedValue().split(">")[3];
+            selectedCourse = selectedCourse.split("<")[0];
             String instructorName = courses.get(selectedCourse);
-            survey.setCourse(courseList.getSelectedValue(), userName, instructorName);
+            survey.setCourse(selectedCourse, userName, instructorName);
             survey.setVisible(true);
         }
     }//GEN-LAST:event_courseBtnActionPerformed
@@ -298,8 +303,12 @@ public class LoginInterface extends javax.swing.JFrame {
     
     private void displayCourses() {
         DefaultListModel<String> model = new DefaultListModel<>();
+        // TODO: Use EvalSurvey getTime()
+        String status = true ? "[Open]" : "[Closed]";
+        String color = true ? "green" : "red";
         courses.keySet().forEach((course) -> {
-            model.addElement(course);
+            model.addElement("<html><font color='" + color + "'>" + 
+                    status + " </font>" + course + "</html>");
         });
         courseList.setModel(model);
     }

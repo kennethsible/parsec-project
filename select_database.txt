@@ -1,0 +1,7 @@
+84788;PHYS 301 Computational Physics;D.J. Pisano;NaN;NaN
+80366;PHYS 451 Introductory Quantum Mechanics;Edward Flag;NaN;NaN
+87710;MATH 441 Applied Linear Algebra;Adam Halasz;NaN;NaN
+80959;MATH 461 Partial Differential Equations;Charis Tsikkou;NaN;NaN
+13833;CS 230 Intro to Software Engineering;Cindy Tanner;NaN;NaN
+80454;CS 111 Introduction-Data Structures;Cindy Tanner;NaN;NaN
+80460;CS 220 Discrete Mathematics;Ronald Reaser;NaN;NaN

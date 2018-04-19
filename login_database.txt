@@ -1,2 +1,3 @@
-kjs0001 password1
-ctanner password2
+ksible pass1
+ctanner pass2
+admin pass3
