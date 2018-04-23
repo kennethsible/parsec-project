@@ -1,0 +1,17 @@
+enable;The course gave me a deeper insight into the topic
+enable;The course developed my abilities and skills for the subject
+enable;The course developed my ability to interact with diverse groups of people
+enable;The course developed my ability to think critically about the subject
+enable;The instructor effectively presented concepts and techniques
+enable;The instructor clearly articulated the standards of performance for the course
+enable;The instructor increased my understanding of course material
+enable;The instructor was helpful when I had difficulty performing activities
+enable;The instructor was readily outside of class
+enable;The instructor provided clear constructive feedback
+enable;The instructor provided opportunities for class participation
+enable;The instructor encouraged student questions and participation
+enable;The instructor encouraged critical engagement with the material
+enable;How satisfied were you with this course?
+enable;How satisfied were you with your effort in this course?
+enable;Please identify what you consider to be the strengths of the course.
+enable;Please identify area(s) where you think the course could be improved.

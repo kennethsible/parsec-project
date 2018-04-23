@@ -1,24 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package parsecsei;
 
-/**
- *
- * @author kensible
- */
-public class EvalSurvey extends javax.swing.JFrame {
+import java.util.ArrayList;
+import javax.swing.Icon;
+import javax.swing.JOptionPane;
+import javax.swing.UIManager;
+
+public class SurveyForm extends javax.swing.JFrame {
     
-    private Time surveyTime;
+    private APIConnect api;
 
     /**
      * Creates new form EvalSurvey
      */
-    public EvalSurvey() {
+    public SurveyForm() {
         initComponents();
         scrollPane.getVerticalScrollBar().setUnitIncrement(8);
+        api = new APIConnect();
+        this.addQuestions(api.retrieveQuestions());
     }
 
     /**
@@ -851,6 +849,11 @@ public class EvalSurvey extends javax.swing.JFrame {
         scrollPane.setViewportView(questionPanel);
 
         submitBtn.setText("Submit SEI");
+        submitBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                submitBtnActionPerformed(evt);
+            }
+        });
 
         studentLabel.setText("Student:");
         studentLabel.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -927,6 +930,16 @@ public class EvalSurvey extends javax.swing.JFrame {
             genderText.setEditable(true);
     }//GEN-LAST:event_otherRadioActionPerformed
 
+    private void submitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitBtnActionPerformed
+        String[] buttonOptions = new String[] {"Course Selection", "Logout"};
+        Icon optionIcon = UIManager.getIcon("FileView.computerIcon");
+        int option = JOptionPane.showOptionDialog(this, "SEI Submission Complete!",
+            "College of Monongalia SEI System", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE,
+            optionIcon, buttonOptions, buttonOptions[0]);
+        if (option == 1)
+            System.exit(0);
+    }//GEN-LAST:event_submitBtnActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -944,20 +957,20 @@ public class EvalSurvey extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(EvalSurvey.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SurveyForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(EvalSurvey.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SurveyForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(EvalSurvey.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SurveyForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(EvalSurvey.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SurveyForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new EvalSurvey().setVisible(true);
+                new SurveyForm().setVisible(true);
             }
         });
     }
@@ -1103,46 +1116,25 @@ public class EvalSurvey extends javax.swing.JFrame {
         instructorLabel.setText(instructor);
         studentLabel.setText("Student: " + student);
     }
-    
-    public void setTime(String start, String stop) {
-        surveyTime = new Time(start, stop);
+
+    private void addQuestions(ArrayList<Question> questions) {
+        questionLabel1.setText("1) " + questions.get(0));
+        questionLabel2.setText("2) " + questions.get(1));
+        questionLabel3.setText("3) " + questions.get(2));
+        questionLabel4.setText("4) " + questions.get(3));
+        questionLabel5.setText("5) " + questions.get(4));
+        questionLabel6.setText("6) " + questions.get(5));
+        questionLabel7.setText("7) " + questions.get(6));
+        questionLabel8.setText("8) " + questions.get(7));
+        questionLabel9.setText("9) " + questions.get(8));
+        questionLabel10.setText("10) " + questions.get(9));
+        questionLabel11.setText("11) " + questions.get(10));
+        questionLabel12.setText("12) " + questions.get(11));
+        questionLabel13.setText("13) " + questions.get(12));
+        questionLabel14.setText("14) " + questions.get(13));
+        questionLabel15.setText("15) " + questions.get(14));
+        questionLabel19.setText("1) " + questions.get(15));
+        questionLabel21.setText("2) " + questions.get(16));
     }
     
-    public String[] getTime() {
-        String[] times = {surveyTime.getStart(), surveyTime.getStop()};
-        return times;
-    }
-    
-    private class Time {
-        
-        private String start, stop;
-        
-        public Time(String start, String stop) {
-            if (!verifyFormat(this.start) || !verifyFormat(this.stop))
-                throw new RuntimeException("Invalid Format: YYYY-MM-DD");
-            this.start = start;
-            this.stop = stop;
-        }
-        
-        public String getStart() {
-            return this.start;
-        }
-        
-        public String getStop() {
-            return this.stop;
-        }
-        
-        public void setStart(String time) {
-            this.start = time;
-        }
-        
-        public void setStop(String time) {
-            this.stop = time;
-        }
-        
-        private boolean verifyFormat(String time) {
-            return time.matches("\\d{4}-\\d{2}-\\d{2}");
-        }
-        
-    }
 }

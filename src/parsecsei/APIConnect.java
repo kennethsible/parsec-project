@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package parsecsei;
 
 import java.io.File;
@@ -11,19 +6,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-/**
- *
- * @author kensible
- */
-public class APIConnection {
+public class APIConnect {
     
-    private HashMap<String, char[]> login;
-    private HashMap<String, String> courses;
-    private HashMap<String, String[]> users;
-    private HashMap<Boolean, String> qpool;
-    private ArrayList<String> questions;
+    private HashMap<String, char[]> login; // <Username, Password>
+    private HashMap<String, Course> courses; // <CRN, Course>
+    private HashMap<String, User> users; // <Username, User>
+    private ArrayList<Question> qpool;
+    private ArrayList<Question> questions;
     
-    public APIConnection() {
+    public APIConnect() {
         File login_db = new File("login_database.txt");
         login = new HashMap<>();
         try {
@@ -32,6 +23,7 @@ public class APIConnection {
                 String[] userLogin = reader.nextLine().split(" ");
                 login.put(userLogin[0], userLogin[1].toCharArray());
             }
+            reader.close();
         } catch (FileNotFoundException e) {
             System.err.println("[System] Login Database Failure");
         }
@@ -42,8 +34,21 @@ public class APIConnection {
             Scanner reader = new Scanner(user_db);
             while(reader.hasNext()) {
                 String[] userInfo = reader.nextLine().split(";");
-                users.put(userInfo[0], userInfo);
+                User.Position pos;
+                switch (userInfo[1]) {
+                    case "student":
+                        pos = User.Position.STUDENT;
+                        break;
+                    case "faculty":
+                        pos = User.Position.FACULTY;
+                        break;
+                    default:
+                        pos = User.Position.ADMIN;
+                        break;
+                }
+                users.put(userInfo[0], new User(pos, userInfo[2], userInfo[3].split(",")));
             }
+            reader.close();
         } catch (FileNotFoundException e) {
             System.err.println("[System] User Database Failure");
         }
@@ -54,63 +59,63 @@ public class APIConnection {
             Scanner reader = new Scanner(course_db);
             while(reader.hasNext()) {
                 String[] courseInfo = reader.nextLine().split(";");
-                courses.put(courseInfo[0], courseInfo[1] + ";" + courseInfo[2]);
+                boolean status = courseInfo[3].equals("open");
+                courses.put(courseInfo[0], new Course(courseInfo[0], courseInfo[1], courseInfo[2],
+                    new DateTime(status)));
             }
+            reader.close();
         } catch (FileNotFoundException e) {
             System.err.println("[System] Course Database Failure");
         }
         
         File qp_db = new File("qp_database.txt");
-        qpool = new HashMap<>();
+        qpool = new ArrayList<>();
         try {
             Scanner reader = new Scanner(qp_db);
             while(reader.hasNext()) {
                 String[] qpInfo = reader.nextLine().split(";");
-                qpool.put(qpInfo[0].equals("enabled"), qpInfo[1]);
+                qpool.add(new Question(qpInfo[0].equals("enabled"), qpInfo[1]));
             }
+            reader.close();
         } catch (FileNotFoundException e) {
             System.err.println("[System] Question Pool Database Failure");
         }
         
-        File select_db = new File("select_database.txt");
+        File select_db = new File("sq_database.txt");
         questions = new ArrayList<>();
         try {
             Scanner reader = new Scanner(select_db);
             while(reader.hasNext()) {
-                questions.add(reader.nextLine());
+                String[] qpInfo = reader.nextLine().split(";");
+                questions.add(new Question(qpInfo[0].equals("enabled"), qpInfo[1]));
             }
+            reader.close();
         } catch (FileNotFoundException e) {
             System.err.println("[System] Selection Database Failure");
         }
-        for (String question : questions)
-                System.out.println(question);
     }
     
     public HashMap<String, char[]> retrieveLogin() {
         return login;
     }
     
-    public String[] retrieveUser(String username) {
+    public User retrieveUser(String username) {
         return users.get(username);
     }
     
-    public HashMap<String, String> retrieveCourses(String[] CRNList) {
-        HashMap<String, String> courseList = new HashMap<>();
-        for (String CRN : CRNList) {
-            String[] courseInfo = courses.get(CRN).split(";");
-            courseList.put(courseInfo[0], courseInfo[1]);
-        }
+    public ArrayList<Course> retrieveCourses(String[] CRNList) {
+        ArrayList<Course> courseList = new ArrayList<>();
+        for (String CRN : CRNList)
+            courseList.add(courses.get(CRN));
         return courseList;
     }
     
-    public HashMap<Boolean, String> retrieveQPool() {
+    public ArrayList<Question> retrieveQPool() {
         return qpool;
     }
     
-    public ArrayList<String> retrieveQuestions() {
+    public ArrayList<Question> retrieveQuestions() {
         return questions;
     }
-    
-    
     
 }
