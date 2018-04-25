@@ -8,8 +8,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class APIConnect {
     
@@ -79,7 +77,7 @@ public class APIConnect {
             Scanner reader = new Scanner(qp_db);
             while(reader.hasNext()) {
                 String[] qpInfo = reader.nextLine().split(";");
-                qpool.add(new Question(qpInfo[0].equals("enabled"), qpInfo[1]));
+                qpool.add(new Question(qpInfo[0].equals("enable"), qpInfo[1]));
             }
             reader.close();
         } catch (FileNotFoundException e) {
@@ -92,7 +90,7 @@ public class APIConnect {
             Scanner reader = new Scanner(select_db);
             while(reader.hasNext()) {
                 String[] qpInfo = reader.nextLine().split(";");
-                questions.add(new Question(qpInfo[0].equals("enabled"), qpInfo[1]));
+                questions.add(new Question(qpInfo[0].equals("enable"), qpInfo[1]));
             }
             reader.close();
         } catch (FileNotFoundException e) {
