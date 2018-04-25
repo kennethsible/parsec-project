@@ -1,10 +1,15 @@
 package parsecsei;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class APIConnect {
     
@@ -116,6 +121,27 @@ public class APIConnect {
     
     public ArrayList<Question> retrieveQuestions() {
         return questions;
+    }
+    
+    public void addQuestion(boolean status, String question) {
+        FileWriter fw = null;
+        try {
+            qpool.add(new Question(status, question));
+            File qp_db = new File("qp_database.txt");
+            fw = new FileWriter(qp_db, true);
+            BufferedWriter bw = new BufferedWriter(fw);
+            String content = status ? "enabled" : "disabled";
+            bw.write(content + question);
+            bw.close();
+        } catch (IOException ex) {
+            System.err.println("[System] File Opening Failed");
+        } finally {
+            try {
+                fw.close();
+            } catch (IOException ex) {
+                System.err.println("[System] File Closure Failed");
+            }
+        }
     }
     
 }
