@@ -238,25 +238,45 @@ public class LoginForm extends javax.swing.JFrame {
             this.displayCourses();
             if (user.getPosition() == User.Position.STUDENT)
                 cardLayout.next(cardPanel);
+            else if (user.getPosition() == User.Position.FACULTY) {
+                cardLayout.next(cardPanel);
+                //new FacultyForm();
+                //this.dispose();
+            }
+            else if (user.getPosition() == User.Position.ADMIN) {
+                //this.setVisible(false);
+                new AdminForm();
+                this.dispose();
+            }
             else throw new RuntimeException("Not Student");
         } else invalidLabel.setVisible(true);
         passField.setText("");
     }//GEN-LAST:event_loginBtnActionPerformed
 
     private void courseBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_courseBtnActionPerformed
-        if (courseList.isSelectionEmpty())
-            selectionLabel.setVisible(true);
-        else if (courseList.getSelectedValue().split("'")[1].equals("red")) { // Closed
-            selectionLabel.setText("Error: Course Closed");
-            selectionLabel.setVisible(true);
-        }
-        else {
-            this.setVisible(false);
-            String selectedCourse = courseList.getSelectedValue().split(">")[3];
-            selectedCourse = selectedCourse.split("<")[0];
-            String instructorName = courses.get(selectedCourse).getInstructor();
-            survey.setCourse(selectedCourse, userName, instructorName);
-            survey.setVisible(true);
+        User user = api.retrieveUser(userText.getText());
+        if (user.getPosition() == User.Position.STUDENT) {
+            if (courseList.isSelectionEmpty())
+                selectionLabel.setVisible(true);
+            else if (courseList.getSelectedValue().split("'")[1].equals("red")) { // Closed
+                selectionLabel.setText("Error: Course Closed");
+                selectionLabel.setVisible(true);
+            }
+            else {
+                this.setVisible(false);
+                String selectedCourse = courseList.getSelectedValue().split(">")[3];
+                selectedCourse = selectedCourse.split("<")[0];
+                String instructorName = courses.get(selectedCourse).getInstructor();
+                survey.setCourse(selectedCourse, userName, instructorName);
+                survey.setVisible(true);
+            }
+        } else {
+            if (courseList.isSelectionEmpty())
+                selectionLabel.setVisible(true);
+            else {
+                this.setVisible(false);
+                new FacultyForm();
+            }
         }
     }//GEN-LAST:event_courseBtnActionPerformed
 

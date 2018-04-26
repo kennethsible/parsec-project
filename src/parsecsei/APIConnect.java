@@ -128,8 +128,8 @@ public class APIConnect {
             File qp_db = new File("qp_database.txt");
             fw = new FileWriter(qp_db, true);
             BufferedWriter bw = new BufferedWriter(fw);
-            String content = status ? "enabled" : "disabled";
-            bw.write(content + question);
+            String content = status ? "enable" : "disable";
+            bw.write("\n" + content + ";" + question);
             bw.close();
         } catch (IOException ex) {
             System.err.println("[System] File Opening Failed");

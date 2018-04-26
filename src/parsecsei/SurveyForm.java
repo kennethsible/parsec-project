@@ -931,10 +931,10 @@ public class SurveyForm extends javax.swing.JFrame {
     }//GEN-LAST:event_otherRadioActionPerformed
 
     private void submitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitBtnActionPerformed
-        String[] buttonOptions = new String[] {"Course Selection", "Logout"};
+        String[] buttonOptions = new String[] {"Course Selection", "Exit System"};
         Icon optionIcon = UIManager.getIcon("FileView.computerIcon");
         int option = JOptionPane.showOptionDialog(this, "SEI Submission Complete!",
-            "College of Monongalia SEI System", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE,
+            "College of Monongalia SEI System", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE,
             optionIcon, buttonOptions, buttonOptions[0]);
         if (option == 1)
             System.exit(0);

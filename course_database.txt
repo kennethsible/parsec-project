@@ -3,5 +3,6 @@
 87710;MATH 441 Applied Linear Algebra;Adam Halasz;closed
 80959;MATH 461 Partial Differential Equations;Charis Tsikkou;open
 13833;CS 230 Intro to Software Engineering;Cindy Tanner;open
-80454;CS 111 Introduction-Data Structures;Cindy Tanner;open
+80454;CS 111 Intro to Data Structures;Cindy Tanner;open
 80460;CS 220 Discrete Mathematics;Ronald Reaser;open
+00000;NaN;NaN;closed
